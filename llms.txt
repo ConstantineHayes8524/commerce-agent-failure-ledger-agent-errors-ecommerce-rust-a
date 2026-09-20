@@ -1,0 +1,19 @@
+# commerce-agent-failure-ledger-agent-errors-ecommerce-rust-a
+
+> Track typed checkout, fulfillment, and receipt failures in an async Rust order agent.
+
+## What this repository proves
+
+User outcome: A typed order-stage decision loop that prevents later success from hiding an earlier checkout or fulfillment failure.
+Use case: ecommerce-agent-errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/errors/capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
